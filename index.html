@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="flex">
         <button type="button"><i class="fa-solid fa-grip"></i>Speaker View</button>
         <button type="button"><i class="fa-solid fa-maximize"></i></button>
     </header>
-    <main>
-        <div class="flex">
+    <main class="flex">
             <div class="webcam">
                 <img src="student.jfif" alt="">
                 <div class="name"><i class="fa-solid fa-microphone-slash"></i>Student Class 122</div>
@@ -110,10 +109,68 @@
                 <img src="student.jfif" alt="">
                 <div class="name"><i class="fa-solid fa-microphone-slash"></i>Student Class 122</div>
             </div>
-        </div>
     </main>
-    <footer>
-        ao
+    <footer class="flex">
+        <div class="user-activation">
+            <button type="button" class="with-apex">
+                <i class="fa-solid fa-microphone"></i>
+                <div>Mute</div>
+                <div class="apex">
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+            </button>
+            <button type="button" class="with-apex">
+                <i class="fa-solid fa-video"></i>
+                <div>Stop Video</div>
+                <div class="apex">
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+            </button>
+        </div>
+        <div class="user-actions">
+            <button type="button">
+                <i class="fa-solid fa-user-plus"></i>
+                <div>Invite</div>
+            </button>
+            <button type="button">
+                <i class="fa-solid fa-user-group"></i>
+                <div>Manage Partecipants</div>
+            </button>
+            <button type="button">
+                <i class="fa-solid fa-chart-column"></i>
+                <div>Polling</div>
+            </button>
+            <button type="button">
+                <i class="fa-solid fa-share-from-square special"></i>
+                <div>Share Screen</div>
+                <div class="apex">
+                    <i class="fa-solid fa-angle-up"></i>
+                </div>
+            </button>
+            <button type="button">
+                <i class="fa-solid fa-user-group"></i>
+                <div>Manage Partecipants</div>
+            </button>
+            <button type="button">
+                <i class="fa-solid fa-comment"></i>
+                <div>Chat</div>
+            </button>
+            <button type="button">
+                <i class="fa-solid fa-record-vinyl"></i>
+                <div>Record Screen</div>
+            </button>
+            <button type="button">
+                <i class="fa-solid fa-border-all"></i>
+                <div>Breakout Rooms</div>
+            </button>
+            <button type="button">
+                <i class="fa-solid fa-ellipsis"></i>
+                <div>More</div>
+            </button>
+        </div>
+        <div class="endmeet flex">
+            <button type="button" id="end">End Meeting</button>
+        </div>
     </footer>
 </body>
 </html>

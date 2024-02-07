@@ -6,10 +6,11 @@
 }
 /* #endregion */
 
-/* region GENERAL */
-body{
-    color: white;
-}
+/* #region GENERAL */
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white
+} /* uso il * e non body per forzarlo anche ai button */
 
 :root{
     --header-height: 50px;
@@ -21,10 +22,9 @@ body{
 }
 /* #endregion */
 
-/* region HEADER */
+/* #region HEADER */
 header{
     background-color: black;
-    display: flex;
     justify-content: flex-end;
     height: var(--header-height);
 }
@@ -34,7 +34,6 @@ header i{
 }
 
 header [type="button"]{
-    color: white; /* e scopriamo che i bottoni non ereditano il colore da body */
     font-weight: 600;
     font-size: 14px;
     padding: 5px;
@@ -60,15 +59,12 @@ main{
     padding: 0px 100px;
     height: calc(100vh - var(--footer-height) - var(--header-height));
     overflow-y: auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 main img{
     width: 200px;
-}
-
-main .flex{
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .webcam{
@@ -84,5 +80,85 @@ main .flex{
     padding: 5px 2px;
     font-size: 12px;
     vertical-align: middle;
+}
+/* #endregion */
+
+/* #region FOOTER */
+footer{
+    height: var(--footer-height);
+    background-color: #222222;
+    padding: 18px 0px;
+}
+
+footer i{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.user-activation, .endmeet{
+    flex-grow: 1;
+    min-width: 180px;
+}
+
+.apex > i{
+    font-size: 12px;
+}
+
+i.apex{
+    font-size: 10px;
+}
+
+footer [type="button"]{
+    position: relative;
+    padding: 4px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    margin: 0px 2px;
+}
+
+[type="button"].with-apex{
+    padding-right: 15px;
+}
+
+footer [type="button"]:hover{
+    background-color: #4A4A4A;
+}
+
+.apex{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.apex:hover{
+    background-color: grey;
+}
+
+.special{
+    color: #4BC800;
+}
+
+.endmeet{
+    justify-content: flex-end;
+}
+
+#end{
+    color: red;
+    border-radius: 0px;
+    background-color: #2d2d2d;
+    font-size: 15px;
+    padding: 0px 20px;
+    margin: -18px 0px; /* usato per superare il padding del footer che mi serviva per quel poco di responsiveness, non uccidetemi */
+}
+
+#end:hover{
+    background-color: #4A4A4A;
+}
+
+.user-actions{
+    overflow: hidden;
 }
 /* #endregion */
