@@ -108,7 +108,7 @@ footer i{
 }
 
 [class^="user-"]{
-    align-items: center;
+    align-self: center;
 }
 
 .endmeet{
