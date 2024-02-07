@@ -5,3 +5,46 @@
     box-sizing: border-box;
 }
 /* #endregion */
+
+/* region GENERAL */
+body{
+    color: white;
+}
+
+:root{
+    --header-height: 50px;
+    --footer-height: 80px;
+}
+
+/* region HEADER */
+header{
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    height: var(--header-height);
+}
+
+header i{
+    font-size: 15px;
+}
+
+header [type="button"]{
+    color: white; /* e scopriamo che i bottoni non ereditano il colore da body */
+    font-weight: 600;
+    font-size: 14px;
+    padding: 5px;
+    background-color: #4A4A4A;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 5px;
+    align-self: center;
+}
+
+.fa-grip{
+    margin-right: 4px;
+}
+
+.fa-maximize{    
+    vertical-align: middle;
+}
+
