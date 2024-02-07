@@ -15,7 +15,6 @@
 :root{
     --header-height: 50px;
     --footer-height: 85px;
-    --padd-footer: 18px
 }
 
 .flex{
@@ -85,10 +84,12 @@ main img{
 /* #endregion */
 
 /* #region FOOTER */
+
 footer{
     height: var(--footer-height);
     background-color: #222222;
     padding: var(--padd-footer) 0px;
+    align-content: center;
 }
 
 footer i{
@@ -97,9 +98,21 @@ footer i{
 }
 
 .user-activation, .endmeet{
-    flex-grow: 1;
     min-width: 160px;
-    flex-basis: 0;
+}
+
+.user-actions{
+    flex-grow: 1;
+    overflow: hidden;
+    justify-content: center;
+}
+
+[class^="user-"]{
+    align-items: center;
+}
+
+.endmeet{
+    justify-content: flex-end;
 }
 
 .apex > i{
@@ -143,24 +156,16 @@ footer [type="button"]:hover{
     color: #4BC800;
 }
 
-.endmeet{
-    justify-content: flex-end;
-}
-
 #end{
     color: red;
     border-radius: 0px;
     background-color: #2d2d2d;
     font-size: 15px;
     padding: 0px 20px;
-    margin: calc(-1 * var(--padd-footer)) 0px; /* usato per superare il padding del footer che mi serviva per quel poco di responsiveness, non uccidetemi */
 }
 
 #end:hover{
     background-color: #4A4A4A;
 }
 
-.user-actions{
-    overflow: hidden;
-}
 /* #endregion */
