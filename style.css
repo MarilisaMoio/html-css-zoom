@@ -13,8 +13,13 @@ body{
 
 :root{
     --header-height: 50px;
-    --footer-height: 80px;
+    --footer-height: 85px;
 }
+
+.flex{
+    display: flex;
+}
+/* #endregion */
 
 /* region HEADER */
 header{
@@ -47,4 +52,37 @@ header [type="button"]{
 .fa-maximize{    
     vertical-align: middle;
 }
+/* #endregion */
 
+/* #region MAIN */
+main{
+    background-color: black;
+    padding: 0px 100px;
+    height: calc(100vh - var(--footer-height) - var(--header-height));
+    overflow-y: auto;
+}
+
+main img{
+    width: 200px;
+}
+
+main .flex{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.webcam{
+    margin: 5px 3px;
+    position: relative;
+}
+
+.name{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 5px 2px;
+    font-size: 12px;
+    vertical-align: middle;
+}
+/* #endregion */
