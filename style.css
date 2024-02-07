@@ -15,6 +15,7 @@
 :root{
     --header-height: 50px;
     --footer-height: 85px;
+    --padd-footer: 18px
 }
 
 .flex{
@@ -87,7 +88,7 @@ main img{
 footer{
     height: var(--footer-height);
     background-color: #222222;
-    padding: 18px 0px;
+    padding: var(--padd-footer) 0px;
 }
 
 footer i{
@@ -152,7 +153,7 @@ footer [type="button"]:hover{
     background-color: #2d2d2d;
     font-size: 15px;
     padding: 0px 20px;
-    margin: -18px 0px; /* usato per superare il padding del footer che mi serviva per quel poco di responsiveness, non uccidetemi */
+    margin: calc(-1 * var(--padd-footer)) 0px; /* usato per superare il padding del footer che mi serviva per quel poco di responsiveness, non uccidetemi */
 }
 
 #end:hover{
